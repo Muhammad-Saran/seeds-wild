@@ -53,11 +53,7 @@ def random_delay(min_delay=3, max_delay=5):
 # Function to type a prompt in ChatGPT's dialog box
 def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
     prompt_text = (
-        f"For the plant '{plant_name}', provide a data profile strictly in JSON format. "
-        "The response must include only the specified attributes, with accurate numeric values where applicable. "
-        "Do not include units, explanations, or any additional information.\n"
-        "{{\n"
-        f"  'Seed Name': '{plant_name}',\n"
+        f" 'Seed Name': '{plant_name}',\n"
         "  'Temperature (2 m)': ,\n"
         "  'Precipitation': ,\n"
         "  'Soil Temperature (0 to 6 cm)': ,\n"
@@ -72,6 +68,10 @@ def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
         "  'Watering (per week)':\n"
         "}}\n"
         "Ensure the response is concise and includes only the requested attributes in the specified format."
+        f"For the plant '{plant_name}', provide a data profile strictly in JSON format. "
+        "The response must include only the specified attributes, with accurate numeric values where applicable. "
+        "Do not include units, explanations, or any additional information.\n"
+        "{{\n"
     )
 
 
