@@ -109,10 +109,8 @@ else:
 
 print("Script finished.") 
 
-
-
-#  "Please categorize the following plant as either 'Yes' for common or 'No' if not common"
+#  "Respond only in this JSON format: {{'response': 'Yes' or 'No'}}."
+#  "i am provinding a sinle plant name in a single prompt dont divide that name into two."
 #  "A plant is considered 'common' if it is frequently grown in gardens or as an ornamental plant. "
 #  "Exclude weeds, wild plants, and plants typically found in the sea (like seaweed and mangroves) 
 #   from being categorized as common. "
-#  "Provide the result strictly in JSON format.\n\n"
